@@ -1,3 +1,3 @@
-#!/usr/local/bin/env nodes
+#!/usr/local/bin/node
 
 console.log('Welcome to the Brain Games!');
