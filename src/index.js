@@ -15,7 +15,7 @@ export const gameEven = () => {
   console.log(condition);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-
+  /*
   const iter = (acc) => {
     const randomNumber = getRandomNumber(1, 20);
     const question = `Question: ${randomNumber}`;
@@ -34,9 +34,10 @@ export const gameEven = () => {
     return console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.Let's try again, ${userName}!`);
   };
   return iter(0);
-  /*
-  let i = 1;
-  while (i < 4) {
+  */
+  let i = 0;
+  const countQuestion = 3;
+  while (i < countQuestion) {
     const randomNumber = getRandomNumber(1, 20);
     const question = `Question: ${randomNumber}`;
     console.log(question);
@@ -50,13 +51,10 @@ export const gameEven = () => {
         console.log(`Congratulations, ${userName}!`);
       }
     } else {
-      console.log(`
-        'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!
-      `);
+      console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
       break;
     }
     i += 1;
   }
-  */
 };
 export default welcome;
