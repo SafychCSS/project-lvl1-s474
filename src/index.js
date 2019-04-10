@@ -16,6 +16,10 @@ export const gameEven = () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   /*
+  делал сначала через функцию, получал постоянно ошибку в return на строке 37,
+  если его убрать и оставить просто вызов функции, то при неправльном ответе выводилось
+  3 раза сообщение, в общем так и не решил как избавиться от ошибки линтера и сделал через цикл
+
   const iter = (acc) => {
     const randomNumber = getRandomNumber(1, 20);
     const question = `Question: ${randomNumber}`;
