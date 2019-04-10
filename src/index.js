@@ -35,9 +35,7 @@ export const gameEven = () => {
   };
   return iter(0);
   */
-  let i = 0;
-  const countQuestion = 3;
-  while (i < countQuestion) {
+  for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandomNumber(1, 20);
     const question = `Question: ${randomNumber}`;
     console.log(question);
@@ -54,7 +52,6 @@ export const gameEven = () => {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
       break;
     }
-    i += 1;
   }
 };
 export default welcome;
