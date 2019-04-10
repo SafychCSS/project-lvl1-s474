@@ -42,8 +42,8 @@ export const gameEven = () => {
     const question = `Question: ${randomNumber}`;
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
-    const isAnswer = (isEven(randomNumber) && answer === 'yes') || (!isEven(randomNumber) && answer === 'no');
-    if (isAnswer) {
+    const correct = (isEven(randomNumber) && answer === 'yes') || (!isEven(randomNumber) && answer === 'no');
+    if (correct) {
       console.log('Correct!');
     } else {
       console.log(`'yes' is wrong answer ;(.Correct answer was 'no'.\nLet's try again, ${userName}!`);
