@@ -55,7 +55,7 @@ export const gameEven = () => {
         console.log(`Congratulations, ${userName}!`);
       }
     } else {
-      console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.Let's try again, ${userName}!`);
+      console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
       break;
     }
     i += 1;
