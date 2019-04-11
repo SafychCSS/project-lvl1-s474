@@ -2,10 +2,10 @@ import runGame from '../run-game';
 import getRandomNumber from '../helpers';
 
 const condition = 'What is the result of the expression?';
+const randomOperators = ['+', '-', '*'];
 
 const generateRound = () => {
   const getOperationRandom = () => {
-    const randomOperators = ['+', '-', '*'];
     const getRandomIndex = getRandomNumber(0, randomOperators.length - 1);
     const getOperation = randomOperators[getRandomIndex];
     return getOperation;
