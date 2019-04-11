@@ -1,9 +1,7 @@
 import readlineSync from 'readline-sync';
-
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-const isEven = number => number % 2 === 0;
-const hi = 'Welcome to the Brain Games!';
-const condition = 'Answer "yes" if number even otherwise answer "no".';
+import {
+  getRandomNumber, isEven, hi, condition,
+} from '../const';
 
 const gameEven = () => {
   console.log(hi);
