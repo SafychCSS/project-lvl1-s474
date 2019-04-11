@@ -38,11 +38,8 @@ const calc = () => {
     }
     const question = `Question: ${operand1} ${operation} ${operand2}`;
     console.log(question);
-    console.log(res);
     const answer = readlineSync.question('Your answer: ');
-    console.log(answer);
     const correct = res === Number(answer);
-    console.log(correct);
     if (correct) {
       console.log('Correct!');
     } else {
