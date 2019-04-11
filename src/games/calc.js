@@ -5,9 +5,10 @@ const condition = 'What is the result of the expression?';
 
 const generateRound = () => {
   const getOperationRandom = () => {
-    const arrayOperators = ['+', '-', '*'];
-    const getRandomIndex = getRandomNumber(0, arrayOperators.length);
-    const getOperation = arrayOperators[getRandomIndex];
+    const randomOperators = ['+', '-', '*'];
+    const getRandomIndex = getRandomNumber(0, randomOperators.length - 1);
+    console.log(getRandomIndex);
+    const getOperation = randomOperators[getRandomIndex];
     return getOperation;
   };
 
