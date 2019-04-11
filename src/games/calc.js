@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import runGame from '../run-game';
 import {
   getRandomNumber, hi, condition,
 } from '../const';
