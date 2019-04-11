@@ -1,5 +1,5 @@
 import runGame from '../run-game';
-import getRandomNumber from '../const';
+import getRandomNumber from '../helpers';
 
 const condition = 'What is the result of the expression?';
 
