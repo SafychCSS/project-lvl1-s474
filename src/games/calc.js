@@ -1,6 +1,6 @@
 import runGame from '../run-game';
 import {
-  getRandomNumber, hi, countRound,
+  hi, countRound,
 } from '../const';
 
 const condition = 'What is the result of the expression?';
