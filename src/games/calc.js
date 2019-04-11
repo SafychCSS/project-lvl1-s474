@@ -1,30 +1,26 @@
 import runGame from '../run-game';
-import {
-  hi, countRound,
-} from '../const';
+import getRandomNumber from '../const';
 
 const condition = 'What is the result of the expression?';
 
-/*
-const getOperationRandom = () => {
-  const operationNumber = getRandomNumber(0, 2);
+const generateRound = () => {
+  const getOperationRandom = () => {
+    const operationNumber = getRandomNumber(0, 2);
 
-  switch (operationNumber) {
-    case 0:
-      return ('+');
-    case 1:
-      return ('-');
-    case 2:
-      return ('*');
-    default:
-      return null;
-  }
-};
+    switch (operationNumber) {
+      case 0:
+        return ('+');
+      case 1:
+        return ('-');
+      case 2:
+        return ('*');
+      default:
+        return null;
+    }
+  };
 
-
-for (let i = 0; i < countRound; i += 1) {
-  const operand1 = getRandomNumber(1, 100);
-  const operand2 = getRandomNumber(1, 100);
+  const operand1 = getRandomNumber(1, 10);
+  const operand2 = getRandomNumber(1, 10);
   const operation = getOperationRandom();
   let res = 0;
   if (operation === '+') {
@@ -36,16 +32,8 @@ for (let i = 0; i < countRound; i += 1) {
   }
   const question = `Question: ${operand1} ${operation} ${operand2}`;
   console.log(question);
-  const answer = readlineSync.question('Your answer: ');
-  const correct = res === Number(answer);
-  if (correct) {
-    console.log('Correct!');
-  } else {
-    console.log(`'yes' is wrong answer ;(.Correct answer was 'no'.\nLet's try again, ${userName}!`);
-    return;
-  }
-}
-console.log(`Congratulations, ${userName}!`);
-*/
+  const answer = String(res);
+  return answer;
+};
 
-export default () => runGame(hi, condition, countRound);
+export default () => runGame(condition, generateRound);
