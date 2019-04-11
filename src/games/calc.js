@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import runGame from '../run-game';
 import {
-  getRandomNumber, hi, condition,
+  getRandomNumber, hi, condition, countRound,
 } from '../const';
 
 const getOperationRandom = () => {
@@ -24,7 +24,7 @@ const calc = () => {
   console.log(condition);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < countRound; i += 1) {
     const operand1 = getRandomNumber(1, 100);
     const operand2 = getRandomNumber(1, 100);
     const operation = getOperationRandom();

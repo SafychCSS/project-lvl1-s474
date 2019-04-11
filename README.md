@@ -2,3 +2,5 @@
 [![Build Status](https://travis-ci.org/SafychCSS/project-lvl1-s474.svg?branch=master)](https://travis-ci.org/SafychCSS/project-lvl1-s474)
 
 [![asciicast](https://asciinema.org/a/qKS5WgXMlLq9lF392hVl1crRt.png)](https://asciinema.org/a/qKS5WgXMlLq9lF392hVl1crRt)
+
+[![asciicast](https://asciinema.org/a/HRQmrMOvKx4nb0jjDvxRguGzI.png)](https://asciinema.org/a/HRQmrMOvKx4nb0jjDvxRguGzI)
