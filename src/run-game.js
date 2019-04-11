@@ -17,7 +17,8 @@ const runGame = (condition, getFunction) => {
     if (answer === getAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${getAnswer}' is wrong answer ;(.Correct answer '${answer}'.\nLet's try again, ${userName}!`);
+      console.log(`'${getAnswer}' is wrong answer ;(.`);
+      console.log(`Correct answer '${answer}'.\nLet's try again, ${userName}!`);
       return;
     }
   }
