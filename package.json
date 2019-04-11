@@ -1,12 +1,13 @@
 {
   "name": "braingamessafychcss",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "this is example package",
   "main": "",
   "keywords": "brain games",
   "bin": {
     "brainGames": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js"
   },
   "files": [
     "dist"
