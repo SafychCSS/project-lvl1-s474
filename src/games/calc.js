@@ -7,7 +7,6 @@ const generateRound = () => {
   const getOperationRandom = () => {
     const randomOperators = ['+', '-', '*'];
     const getRandomIndex = getRandomNumber(0, randomOperators.length - 1);
-    console.log(getRandomIndex);
     const getOperation = randomOperators[getRandomIndex];
     return getOperation;
   };
@@ -16,17 +15,24 @@ const generateRound = () => {
   const operand2 = getRandomNumber(1, 10);
   const operation = getOperationRandom();
   let res = 0;
-  if (operation === '+') {
-    res = operand1 + operand2;
-  } else if (operation === '-') {
-    res = operand1 - operand2;
-  } else if (operation === '*') {
-    res = operand1 * operand2;
+  switch (operation) {
+    case '+':
+      res = operand1 + operand2;
+      break;
+    case '-':
+      res = operand1 - operand2;
+      break;
+    case '*':
+      res = operand1 * operand2;
+      break;
+    default:
+      res = null;
   }
+
   const question = `Question: ${operand1} ${operation} ${operand2}`;
-  console.log(question);
   const answer = String(res);
-  return answer;
+  const data = [question, answer];
+  return data;
 };
 
 export default () => runGame(condition, generateRound);
