@@ -29,7 +29,7 @@ const generateRound = () => {
       res = null;
   }
 
-  const question = `Question: ${operand1} ${operation} ${operand2}`;
+  const question = `${operand1} ${operation} ${operand2}`;
   const answer = String(res);
   const data = [question, answer];
   return data;
