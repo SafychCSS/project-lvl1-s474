@@ -5,9 +5,9 @@ const condition = 'What is the result of the expression?';
 
 const generateRound = () => {
   const getOperationRandom = () => {
-    const array = ['+', '-', '*'];
-    const op = getRandomNumber(0, array.length);
-    const getOperation = array[op];
+    const arrayOperators = ['+', '-', '*'];
+    const getRandomIndex = getRandomNumber(0, arrayOperators.length);
+    const getOperation = arrayOperators[getRandomIndex];
     return getOperation;
   };
 
