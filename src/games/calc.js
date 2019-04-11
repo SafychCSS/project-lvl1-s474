@@ -5,18 +5,10 @@ const condition = 'What is the result of the expression?';
 
 const generateRound = () => {
   const getOperationRandom = () => {
-    const operationNumber = getRandomNumber(0, 2);
-
-    switch (operationNumber) {
-      case 0:
-        return ('+');
-      case 1:
-        return ('-');
-      case 2:
-        return ('*');
-      default:
-        return null;
-    }
+    const array = ['+', '-', '*'];
+    const op = getRandomNumber(0, array.length);
+    const getOperation = array[op];
+    return getOperation;
   };
 
   const operand1 = getRandomNumber(1, 10);
