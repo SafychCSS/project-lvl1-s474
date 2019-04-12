@@ -2,7 +2,6 @@ import runGame from '../run-game';
 import getRandomNumber from '../utils';
 
 const condition = 'What number is missing in the progression?';
-const countNumber = 10;
 const lastChangeNumber = 9;
 
 const generateRound = () => {
@@ -13,7 +12,7 @@ const generateRound = () => {
   const generateProgression = () => {
     let nextNumberInList = startNumber + step;
     const res = [startNumber];
-    for (let i = 0; i < countNumber - 1; i += 1) {
+    for (let i = 0; i < lastChangeNumber; i += 1) {
       res.push(nextNumberInList);
       nextNumberInList += step;
     }
