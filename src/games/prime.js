@@ -15,7 +15,7 @@ const generateRound = () => {
       acc += 1;
     }
     return true;
-  /*
+  /* сделал через итеративный процесс и while в чем разница не знаю
     const iter = (item, acc) => {
       if (acc > item / 2) {
         return true;
