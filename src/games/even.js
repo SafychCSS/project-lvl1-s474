@@ -1,5 +1,5 @@
 import runGame from '../run-game';
-import getRandomNumber from '../helpers';
+import getRandomNumber from '../utils';
 
 const isEven = number => number % 2 === 0;
 const condition = 'Answer "yes" if number even otherwise answer "no".';

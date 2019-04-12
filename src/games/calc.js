@@ -1,5 +1,5 @@
 import runGame from '../run-game';
-import getRandomNumber from '../helpers';
+import getRandomNumber from '../utils';
 
 const condition = 'What is the result of the expression?';
 const randomOperators = ['+', '-', '*'];
