@@ -22,7 +22,6 @@ const generateRound = () => {
   const progr = generateProgression();
   const answer = String(progr.splice(changeElementNumber, 1, '...'));
   progr.splice(changeElementNumber, 1, '...');
-  const data = [progr.join(' '), answer];
-  return data;
+  return [progr.join(' '), answer];
 };
 export default () => runGame(condition, generateRound);

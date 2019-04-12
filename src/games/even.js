@@ -8,7 +8,6 @@ const condition = 'Answer "yes" if number even otherwise answer "no".';
 const generateRound = () => {
   const question = getRandomNumber(1, 100);
   const answer = isEven(question) ? 'yes' : 'no';
-  const data = [question, answer];
-  return data;
+  return [question, answer];
 };
 export default () => runGame(condition, generateRound);

@@ -15,7 +15,6 @@ const generateRound = () => {
   const num2 = getRandomNumber(1, 10);
   const question = `${num1} ${num2}`;
   const answer = String(getGcd(num1, num2));
-  const data = [question, answer];
-  return data;
+  return [question, answer];
 };
 export default () => runGame(condition, generateRound);

@@ -31,8 +31,7 @@ const generateRound = () => {
 
   const question = `${operand1} ${operation} ${operand2}`;
   const answer = String(res);
-  const data = [question, answer];
-  return data;
+  return [question, answer];
 };
 
 export default () => runGame(condition, generateRound);
