@@ -10,11 +10,11 @@ const generateRound = () => {
   const changeElementNumber = getRandomNumber(1, 9);
 
   const generateProgression = () => {
-    let nextNumb = startNumber + step;
+    let nextNumberInList = startNumber + step;
     const res = [startNumber];
     for (let i = 0; i < countNumber - 1; i += 1) {
-      res.push(nextNumb);
-      nextNumb += step;
+      res.push(nextNumberInList);
+      nextNumberInList += step;
     }
     return res;
   };
