@@ -8,9 +8,7 @@ const runGame = (condition, getFunction) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   for (let i = 0; i < countRound; i += 1) {
-    const getQuestion = getFunction();
-    const question = getQuestion[0];
-    const answer = getQuestion[1];
+    const [question, answer] = getFunction();
     console.log(`Question: ${question}`);
     const getAnswer = readlineSync.question('Your answer: ');
     console.log(getAnswer);
