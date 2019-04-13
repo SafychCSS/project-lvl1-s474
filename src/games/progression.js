@@ -6,9 +6,10 @@ const length = 10;
 
 const generateProgression = () => {
   const step = getRandomNumber(1, length);
+  const startNumber = getRandomNumber(1, 10);
   const result = [];
   for (let i = 0; i < length; i += 1) {
-    result.push(`${step}` * `${i}`);
+    result.push(startNumber + `${step}` * `${i}`);
   }
   return result;
 };
