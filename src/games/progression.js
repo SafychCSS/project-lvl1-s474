@@ -20,7 +20,7 @@ const generateRound = () => {
   const list = generateProgression();
   const answer = String(list.splice(changeElementNumber, 1, '...'));
   list.splice(changeElementNumber, 1, '...');
-  const getStrFromListNumbers = list.join(' ');
-  return [getStrFromListNumbers, answer];
+  const stringFromList = list.join(' ');
+  return [stringFromList, answer];
 };
 export default () => runGame(condition, generateRound);
