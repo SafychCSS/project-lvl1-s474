@@ -3,7 +3,7 @@ import getRandomNumber from '../utils';
 
 const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 let acc = 2;
-const isSimpleNumber = (number) => {
+const isPrime = (number) => {
   while (acc <= number / 2) {
     if (number % acc === 0) {
       return false;
@@ -15,7 +15,7 @@ const isSimpleNumber = (number) => {
 
 const generateRound = () => {
   const randomNumber = getRandomNumber(1, 20);
-  const isSimple = isSimpleNumber(randomNumber);
+  const isSimple = isPrime(randomNumber);
   const answer = isSimple ? 'yes' : 'no';
   return [randomNumber, answer];
 };
