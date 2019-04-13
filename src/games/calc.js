@@ -14,23 +14,23 @@ const generateRound = () => {
   const operand1 = getRandomNumber(1, 10);
   const operand2 = getRandomNumber(1, 10);
   const operation = getOperationRandom();
-  let res = 0;
+  let result = 0;
   switch (operation) {
     case '+':
-      res = operand1 + operand2;
+      result = operand1 + operand2;
       break;
     case '-':
-      res = operand1 - operand2;
+      result = operand1 - operand2;
       break;
     case '*':
-      res = operand1 * operand2;
+      result = operand1 * operand2;
       break;
     default:
-      res = null;
+      result = null;
   }
 
   const question = `${operand1} ${operation} ${operand2}`;
-  const answer = String(res);
+  const answer = String(result);
   return [question, answer];
 };
 
