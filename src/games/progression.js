@@ -1,4 +1,4 @@
-import runGame from '../run-game';
+import runGame from '..';
 import getRandomNumber from '../utils';
 
 const condition = 'What number is missing in the progression?';
