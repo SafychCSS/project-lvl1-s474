@@ -17,10 +17,10 @@ const generateProgression = () => {
 const generateRound = () => {
   const changeElementNumber = getRandomNumber(1, length - 1);
 
-  const listNumbers = generateProgression();
-  const answer = String(listNumbers.splice(changeElementNumber, 1, '...'));
-  listNumbers.splice(changeElementNumber, 1, '...');
-  const getStrFromListNumbers = listNumbers.join(' ');
+  const list = generateProgression();
+  const answer = String(list.splice(changeElementNumber, 1, '...'));
+  list.splice(changeElementNumber, 1, '...');
+  const getStrFromListNumbers = list.join(' ');
   return [getStrFromListNumbers, answer];
 };
 export default () => runGame(condition, generateRound);
