@@ -6,11 +6,11 @@ const length = 10;
 
 const generateProgression = () => {
   const step = getRandomNumber(1, length);
-  const res = [];
+  const result = [];
   for (let i = 0; i < length; i += 1) {
-    res.push(`${step}` * `${i}`);
+    result.push(`${step}` * `${i}`);
   }
-  return res;
+  return result;
 };
 
 const generateRound = () => {
