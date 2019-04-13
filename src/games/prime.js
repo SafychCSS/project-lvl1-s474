@@ -16,8 +16,7 @@ const isPrime = (number) => {
 
 const generateRound = () => {
   const randomNumber = getRandomNumber(1, 20);
-  const isSimple = isPrime(randomNumber);
-  const answer = isSimple ? 'yes' : 'no';
+  const answer = isPrime(randomNumber) ? 'yes' : 'no';
   return [randomNumber, answer];
 };
 export default () => runGame(condition, generateRound);
