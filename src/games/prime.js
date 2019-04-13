@@ -2,8 +2,9 @@ import runGame from '..';
 import getRandomNumber from '../utils';
 
 const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-let acc = 2;
+
 const isPrime = (number) => {
+  let acc = 2;
   while (acc <= number / 2) {
     if (number % acc === 0) {
       return false;
