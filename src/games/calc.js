@@ -26,7 +26,7 @@ const generateRound = () => {
       result = operand1 * operand2;
       break;
     default:
-      result = null;
+      result = 'Error. Operation is empty';
   }
 
   const question = `${operand1} ${operation} ${operand2}`;
