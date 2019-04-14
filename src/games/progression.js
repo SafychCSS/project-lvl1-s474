@@ -18,7 +18,7 @@ const generateRound = () => {
   const changeElementNumber = getRandomNumber(1, length - 1);
 
   const progression = generateProgression();
-  const answer = String(progression.splice(changeElementNumber, 1, '...'));
+  const answer = String(progression[changeElementNumber]);
   progression.splice(changeElementNumber, 1, '...');
   const question = progression.join(' ');
   return [question, answer];
